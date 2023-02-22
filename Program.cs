@@ -4,10 +4,12 @@ Main();
 
 void Main()
 {
-    Console.Write($@"
+    Console.Write(
+        $@"
     Welcome to the Enthusiastic Moose Simulator!
     --------------------------------------------
-    ");
+    "
+    );
 
     // Let the moose speak!
     MooseSays("H I, I'M  E N T H U S I A S T I C !");
@@ -16,14 +18,22 @@ void Main()
     // Ask some questions
     MooseAsks("Is Canada real?", "Really? It seems very unlikely.", "I  K N E W  I T !!!");
     MooseAsks("Are you enthusiastic?", "Yay!", "You should try it!");
-    MooseAsks("Do you love C# yet?", "Good job sucking up to your instructor!", "You will...oh, yes, you will...");
-    MooseAsks("Do you want to know a secret?", "ME TOO!!!! I love secrets...tell me one!", "Oh, no...secrets are the best, I love to share them!");
+    MooseAsks(
+        "Do you love C# yet?",
+        "Good job sucking up to your instructor!",
+        "You will...oh, yes, you will..."
+    );
+    MooseAsks(
+        "Do you want to know a secret?",
+        "ME TOO!!!! I love secrets...tell me one!",
+        "Oh, no...secrets are the best, I love to share them!"
+    );
 }
-
 
 void MooseSays(string message)
 {
-    Console.Write($@"
+    Console.Write(
+        $@"
                                        _.--^^^--,
                                     .'          `\
   .-^^^^^^-.                      .'              |
@@ -50,7 +60,8 @@ void MooseSays(string message)
                       /|\  (_\  /_) /
                       \ \'._  ` '_.'
                        `^^` `^^^`
-    ");
+    "
+    );
 }
 
 void MooseAsks(string question, string affirmativeResponse, string negativeResponse)
