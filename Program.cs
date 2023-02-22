@@ -4,9 +4,10 @@ Main();
 
 void Main()
 {
-    Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
-    Console.WriteLine("--------------------------------------------");
-    Console.WriteLine();
+    Console.Write($@"
+    Welcome to the Enthusiastic Moose Simulator!
+    --------------------------------------------
+    ");
 
     // Let the moose speak!
     MooseSays("H I, I'M  E N T H U S I A S T I C !");
