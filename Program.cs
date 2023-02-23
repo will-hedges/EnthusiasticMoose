@@ -126,7 +126,8 @@ void MagicMoose()
     while (true)
     {
         Console.Write($"Enter your question: ");
-        string answer = Console.ReadLine();
+        // added .Trim() in case the user enters blank spaces, i.e. "   " as a question
+        string answer = Console.ReadLine().Trim();
         if (answer != "")
         {
             int randomIdx = r.Next(20);
